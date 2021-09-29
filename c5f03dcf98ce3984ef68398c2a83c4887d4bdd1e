@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96573682_f29cf558",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2021-09-29T15:58:24Z",
+      "side": 1,
+      "message": "Few observations/comments:\n* Imo we can remove `grpc-robot` folder right under the repo (which is the same), and so its internal ones can be moved a directory up right under repo folder.\n* Jenkins per-patchset Licence verification job failed due to files under `docs` folder don\u0027t have it. Do we really need licence header in those? If not, if there is a way to skip these files from the verification? @Zack @Teo\n* Jenkins per-patchset Tag Collision job failed due to VERSION file which has 2.9.3 value and verification expects 2.9.2 parent value which is not there, this being the first patch in ONF (but pypi publication has previous ones). How to resolve this? @Zack @Teo\n* Jenkins per-patchset Unit Test job failes as it expects a Makefile for the same.",
+      "revId": "c5f03dcf98ce3984ef68398c2a83c4887d4bdd1e",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
