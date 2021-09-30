@@ -34,6 +34,29 @@
       "parentUuid": "96573682_f29cf558",
       "revId": "c5f03dcf98ce3984ef68398c2a83c4887d4bdd1e",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e67b3916_5b25a417",
+        "filename": "docs/dmi_0_10_1.html",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1000064
+      },
+      "writtenOn": "2021-09-30T04:41:42Z",
+      "side": 1,
+      "message": "What are these .html and .xml files for?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 15
+      },
+      "revId": "c5f03dcf98ce3984ef68398c2a83c4887d4bdd1e",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
