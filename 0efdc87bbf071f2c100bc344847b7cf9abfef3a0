@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c36b1a35_d7e94778",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000116
+      },
+      "writtenOn": "2021-10-05T12:54:32Z",
+      "side": 1,
+      "message": "overriding Jenkins due to non existing prior tags",
+      "revId": "0efdc87bbf071f2c100bc344847b7cf9abfef3a0",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
