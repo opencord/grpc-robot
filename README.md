@@ -21,6 +21,7 @@ is used.
 |                   |                             | 0.10.2              | [grpc_robot.Dmi](docs/dmi_0_10_2.html) |
 |                   |                             | 0.12.0              | [grpc_robot.Dmi](docs/dmi_0_12_0.html) |
 |                   |                             | 1.0.0               | [grpc_robot.Dmi](docs/dmi_1_0_0.html) |
+|                   |                             | 1.2.1               | [grpc_robot.Dmi](docs/dmi_1_2_1.html) |
 | voltha            | voltha-protos               | 4.0.13              | [grpc_robot.Voltha](docs/voltha_4_0_13.html) |
 
 ## Tools

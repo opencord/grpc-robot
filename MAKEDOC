@@ -22,7 +22,7 @@ for version in $(curl -s https://pypi.org/pypi/device-management-interface/json 
         python3 -m pip install -q device-management-interface=="$version"
 
         python3 -m robot.libdoc -P . grpc_robot.Dmi docs/"$filename".html
-        python3 -m robot.libdoc -P . grpc_robot.Dmi docs/"$filename".xml
+        # python3 -m robot.libdoc -P . grpc_robot.Dmi docs/"$filename".xml
     fi
 
 done
@@ -36,14 +36,14 @@ for version in $(curl -s https://pypi.org/pypi/voltha-protos/json | jq '.release
         python3 -m pip install -q voltha-protos=="$version"
 
         python3 -m robot.libdoc -P . grpc_robot.Voltha docs/"$filename".html
-        python3 -m robot.libdoc -P . grpc_robot.Voltha docs/"$filename".xml
+        # python3 -m robot.libdoc -P . grpc_robot.Voltha docs/"$filename".xml
     fi
 
 done
 
 python3 -m robot.libdoc -P . grpc_robot.Collections docs/collections.html
-python3 -m robot.libdoc -P . grpc_robot.Collections docs/collections.xml
+# python3 -m robot.libdoc -P . grpc_robot.Collections docs/collections.xml
 python3 -m robot.libdoc -P . grpc_robot.DmiTools docs/dmi_tools.html
-python3 -m robot.libdoc -P . grpc_robot.DmiTools docs/dmi_tools.xml
+# python3 -m robot.libdoc -P . grpc_robot.DmiTools docs/dmi_tools.xml
 python3 -m robot.libdoc -P . grpc_robot.VolthaTools docs/voltha_tools.html
-python3 -m robot.libdoc -P . grpc_robot.VolthaTools docs/voltha_tools.xml
+# python3 -m robot.libdoc -P . grpc_robot.VolthaTools docs/voltha_tools.xml
