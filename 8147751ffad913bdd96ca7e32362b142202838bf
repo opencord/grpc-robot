@@ -16,6 +16,24 @@
       "message": "It looks good to me. Maybe you can remove the xml files. I was not aware that the MAKEDOC creates them too. Just like the HTML they are needed for the keyword documentation, but those are rarely used.\n\nI see, you were faster than me :-)",
       "revId": "8147751ffad913bdd96ca7e32362b142202838bf",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "455aa1d5_91917a34",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000741
+      },
+      "writtenOn": "2022-02-07T13:45:58Z",
+      "side": 1,
+      "message": "Thanks for the quick review Martin.\n\nYes, I have removed the xml files in patch-set 2 as Jenkins licence job was failing for missing header.\n\n\nOnly steps that are left to do now are:\n\u003e rm dist/*; python3 setup.py sdist bdist_wheel\n\u003e pip uninstall -y grpc_robot; pip install dist/*.tar.gz\n\u003e twine upload dist/*\nThese steps will be performed as part of Jenkins publish job once the above patch is merged.\nPlease check this publish pipeline for more details.\nhttps://github.com/opencord/ci-management/blob/master/jjb/verify/grpc-robot.yaml#L11 \nhttps://github.com/opencord/ci-management/blob/master/jjb/shell/pypi-publish.sh",
+      "parentUuid": "3377e3af_410fceab",
+      "revId": "8147751ffad913bdd96ca7e32362b142202838bf",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
