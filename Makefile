@@ -41,7 +41,7 @@ help: ## Print help for each Makefile target
 vst_venv:
 	virtualenv -p python3 $@ ;\
 	source ./$@/bin/activate ;\
-	python -m pip install -r requirements.txt
+	python -m pip install -r requirements.txt ;\
 	python $(DMI_SERVER_FILE) & echo $$! > server.PID
 
 test: vst_venv
