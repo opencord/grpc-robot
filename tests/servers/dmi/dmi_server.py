@@ -139,7 +139,7 @@ def serve():
     dmi.hw_metrics_mgmt_service_pb2_grpc.add_NativeMetricsManagementServiceServicer_to_server(DmiMetricsManagementServiceServicer(), server)
     dmi.sw_management_service_pb2_grpc.add_NativeSoftwareManagementServiceServicer_to_server(DmiSoftwareManagementServiceServicer(), server)
 
-    server.add_insecure_port('127.0.01:50051')
+    server.add_insecure_port('127.0.0.1:50051')
     server.start()
     server.wait_for_termination()
 

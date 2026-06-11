@@ -21,7 +21,7 @@ import logging.config
 import tempfile
 import textwrap
 import importlib
-import pkg_resources
+from importlib.metadata import version
 
 from .tools.protop import ProtoBufParser
 from distutils.version import StrictVersion
@@ -225,9 +225,9 @@ class GrpcRobot(object):
         """
 
         if keyword_name in self.keywords:
-            a = inspect.getargspec(getattr(self.keywords[keyword_name], keyword_name))
+            a = inspect.getfullargspec(getattr(self.keywords[keyword_name], keyword_name))
         else:
-            a = inspect.getargspec(getattr(self, keyword_name))
+            a = inspect.getfullargspec(getattr(self, keyword_name))
 
         # skip "self" as first parameter -> [1:]
         args_without_defaults = a.args[1:-len(a.defaults)] if a.defaults is not None else a.args[1:]

@@ -45,7 +45,7 @@ setup(
     ],
     install_requires=[
         'six',
-        'robotframework>=3.1.2',
+        'robotframework>=3.2.2,<4',
         'grpcio',
         'decorator',
         'attrs',
