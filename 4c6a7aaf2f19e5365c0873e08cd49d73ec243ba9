@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "79271812_a53ff9c1",
+        "filename": ".github/workflows/release.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1001041
+      },
+      "writtenOn": "2026-07-08T05:16:19Z",
+      "side": 1,
+      "message": "I have one doubt, why using python 3.10 with ubuntu-latest.",
+      "revId": "4c6a7aaf2f19e5365c0873e08cd49d73ec243ba9",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5cea9667_c9bad709",
