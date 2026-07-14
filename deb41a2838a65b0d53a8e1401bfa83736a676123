@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "deb41a2838a65b0d53a8e1401bfa83736a676123",
       "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bdd63d0c_df0792af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001013
+      },
+      "writtenOn": "2026-07-14T03:26:44Z",
+      "side": 1,
+      "message": "Please rebase this change from master. CI is working properly now, so any failure should be a legitimate result.",
+      "revId": "deb41a2838a65b0d53a8e1401bfa83736a676123",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
     }
   ]
 }
