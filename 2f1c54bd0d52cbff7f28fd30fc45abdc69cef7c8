@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3a897a8_cbd79147",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1001013
+      },
+      "writtenOn": "2026-07-16T19:39:28Z",
+      "side": 1,
+      "message": "The error we\u0027re seeing in CI is related to pinned packages. robotframework and robotframework-lint are pinned to versions that are too old for Python 3.10+. But even when these are unpinned, we run into another problem: voltha-protos has googleapis-common-protos pinned to an outdated version, and that package is a requirement here. So voltha-protos will need to be updated, and then this repo.",
+      "revId": "2f1c54bd0d52cbff7f28fd30fc45abdc69cef7c8",
+      "serverId": "2a2bfe1b-c5c2-48ed-9ac8-16438ab24388"
+    }
+  ]
+}
