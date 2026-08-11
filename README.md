@@ -36,13 +36,12 @@ The list of keywords may can be extended by request if required.
 
 ## Installation
 
-    pip install robot-grpc
+    pip install grpc-robot
 
-## How to use _robot-grpc_ in Robot Framework
+## How to use _grpc-robot_ in Robot Framework
 The library has a named parameter _version_ to indicate the ProtoBuf file set to be used.
 
     Import Library    grpc_robot.Dmi
     Import Library    grpc_robot.Collections
     Import Library    grpc_robot.DmiTools
     Import Library    grpc_robot.VolthaTools
-    
