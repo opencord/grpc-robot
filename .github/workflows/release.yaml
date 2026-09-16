@@ -43,6 +43,7 @@ jobs:
 
           python - "$PACKAGE_NAME" "$PACKAGE_VERSION" <<'PY'
           import json
+          import os
           import sys
           import urllib.error
           import urllib.request
@@ -59,8 +60,13 @@ jobs:
                   releases = {}
               else:
                   raise
+          except urllib.error.URLError as exc:
+              print(f"Unable to query {url}: {exc}. Continuing with publish.")
+              with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+                  output.write("should-publish=true\n")
+              raise SystemExit(0)
 
-          with open(__import__("os").environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
               if package_version in releases:
                   print(
                       f"Release {package_name}=={package_version} already exists on PyPI; skipping publish."
