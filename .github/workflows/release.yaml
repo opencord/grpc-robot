@@ -77,7 +77,7 @@ jobs:
                   output.write("should-publish=true\n")
           PY
 
-      - name: Build package distribution files
+      - name: Build and publish package distribution files
         if: steps.pypi-release-check.outputs.should-publish == 'true'
         uses: opencord/shared-workflows/.github/actions/pypi-publish-action@main
         with:
