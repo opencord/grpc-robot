@@ -21,7 +21,7 @@ import logging.config
 import tempfile
 import textwrap
 import importlib
-from importlib.metadata import version
+from importlib import metadata
 
 from .tools.protop import ProtoBufParser
 from distutils.version import StrictVersion
@@ -45,8 +45,8 @@ def _package_version_get(package_name, source=None):
                 head, tail = os.path.split(head)
 
     try:
-        return pkg_resources.get_distribution(package_name).version
-    except pkg_resources.DistributionNotFound:
+        return metadata.version(package_name)
+    except metadata.PackageNotFoundError:
         raise NameError("Package '%s' is not installed!" % package_name)
 
 
@@ -147,12 +147,10 @@ class GrpcRobot(object):
         return keywords
 
     def get_installed_version(self):
-        dists = [str(d).split() for d in pkg_resources.working_set if str(d).split()[0] == self.package_name]
-
         try:
-            pb_version = dists[0][-1]
+            pb_version = metadata.version(self.package_name)
             self.logger.info('installed package %s==%s' % (self.package_name, pb_version))
-        except IndexError:
+        except metadata.PackageNotFoundError:
             self.logger.error('package for %s not installed' % self.package_name)
             return None
 
