@@ -1,10 +1,11 @@
 six
 # 3.1.2 imports Mapping from collections and fails on Python 3.10+
-robotframework>=3.2.2,<4
+# 3.1.2 imports Mapping from collections and fails on Python 3.10+
+robotframework>=5.0.0,<=7.2.2
 robotframework-lint>=1.1,<2
 grpcio
 decorator
 attrs
 parsy
-device-management-interface>=0.9.1
-voltha-protos>=4.0.13
+device-management-interface>=1.18.2
+voltha-protos>=5.7.10
