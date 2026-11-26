@@ -45,15 +45,15 @@ setup(
     ],
     install_requires=[
         'six',
-        'robotframework>=3.2.2,<4',
+        'robotframework>=5.0.0,<=7.2.2',
         'grpcio',
         'decorator',
         'attrs',
         'parsy',
-        'device-management-interface>=0.9.1',
-        'voltha-protos>=4.0.13'
+        'device-management-interface>=1.18.2',
+        'voltha-protos>=5.7.10'
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.10',
     packages=find_packages(exclude='tests'),
     package_data={
         NAME: package_data(),
